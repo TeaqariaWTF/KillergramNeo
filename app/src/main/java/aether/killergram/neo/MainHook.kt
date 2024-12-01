@@ -1,14 +1,14 @@
 package aether.killergram.neo
 
-import aether.killergram.neo.ui.hooks.Hooks
-import aether.killergram.neo.ui.hooks.forceAllowForwards
-import aether.killergram.neo.ui.hooks.keepDeletedMessages
-import aether.killergram.neo.ui.hooks.killAutoAudio
-import aether.killergram.neo.ui.hooks.killSponsoredMessages
-import aether.killergram.neo.ui.hooks.killStories
-import aether.killergram.neo.ui.hooks.localPremium
-import aether.killergram.neo.ui.hooks.noRounding
-import aether.killergram.neo.ui.hooks.overrideAccountCount
+import aether.killergram.neo.hooks.Hooks
+import aether.killergram.neo.hooks.forceAllowForwards
+import aether.killergram.neo.hooks.keepDeletedMessages
+import aether.killergram.neo.hooks.killAutoAudio
+import aether.killergram.neo.hooks.killSponsoredMessages
+import aether.killergram.neo.hooks.killStories
+import aether.killergram.neo.hooks.localPremium
+import aether.killergram.neo.hooks.noRounding
+import aether.killergram.neo.hooks.overrideAccountCount
 import android.content.res.XModuleResources
 import de.robv.android.xposed.IXposedHookInitPackageResources
 import de.robv.android.xposed.IXposedHookLoadPackage

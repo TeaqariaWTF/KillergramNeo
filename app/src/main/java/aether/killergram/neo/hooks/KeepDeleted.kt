@@ -1,4 +1,4 @@
-package aether.killergram.neo.ui.hooks
+package aether.killergram.neo.hooks
 
 import aether.killergram.neo.log
 import de.robv.android.xposed.XC_MethodReplacement
