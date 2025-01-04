@@ -2,6 +2,7 @@ package aether.killergram.neo
 
 import aether.killergram.neo.hooks.Hooks
 import aether.killergram.neo.hooks.forceAllowForwards
+import aether.killergram.neo.hooks.forceSystemTypeface
 import aether.killergram.neo.hooks.keepDeletedMessages
 import aether.killergram.neo.hooks.killAutoAudio
 import aether.killergram.neo.hooks.killSponsoredMessages
@@ -45,7 +46,8 @@ class MainHook : IXposedHookLoadPackage, IXposedHookZygoteInit, IXposedHookInitP
             "stories" to { hooks.killStories() },
             "volume" to { hooks.killAutoAudio() },
             "deleted" to { hooks.keepDeletedMessages() },
-            "norounding" to { hooks.noRounding() }
+            "norounding" to { hooks.noRounding() },
+            "typeface" to { hooks.forceSystemTypeface() }
         )
 
         hooksMap.forEach { (key, action) ->

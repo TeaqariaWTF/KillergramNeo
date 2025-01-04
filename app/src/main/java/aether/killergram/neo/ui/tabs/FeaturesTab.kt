@@ -85,6 +85,11 @@ private fun SwitchGroupList() {
                             "Disable audio playback on volume button press",
                             "volume",
                             "Turn off that annoying behaviour of the app playing the audio from the video on the screen instead of lowering your volume"
+                        ),
+                        Triple(
+                            "Force system fonts",
+                            "typeface",
+                            "Force the usage of your system's typeface, instead of Telegram's own."
                         )
                     ),
                     anySwitchToggled
